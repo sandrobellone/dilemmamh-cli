@@ -46,9 +46,11 @@ int main(int argc, char *argv[]){
           break;
         case 'h' :
           guida();
-          break;
+		  return 0;
         default :
           printf("opzione sconosciuta!\n");
+          guida();
+          return 0;
     }
     printf("Numero iterazioni: %d\n",n);
     printf("Tipo di scelta: %c ",t);
